@@ -1,7 +1,10 @@
-// funciones en javaScript
-function areaDeUnCadrado(ancho, alto){
-    return ancho * alto
-}
+var boton = document.getElementById('bt');
+boton.addEventListener('click', mensaje);
 
-var area = areaDeUnCadrado(5, 4);
-console.log(area);
+
+function mensaje(){
+    var formulario1 = document.getElementById('formulario1');
+    var datoFormulario1 = parseFloat (formulario1.value);
+
+    alert('El valor del formulario es ' + datoFormulario1);
+}
