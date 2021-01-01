@@ -1,4 +1,7 @@
-// Dow windows - Conocer la ruta
-var ruta = window.location; // Da como resultado un objeto
-console.log(ruta);
-console.log(ruta.pathname);
+// funciones en javaScript
+function areaDeUnCadrado(ancho, alto){
+    return ancho * alto
+}
+
+var area = areaDeUnCadrado(5, 4);
+console.log(area);
