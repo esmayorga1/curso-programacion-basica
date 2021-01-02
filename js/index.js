@@ -1,18 +1,16 @@
-for (let i = 0; i <= 100; i++) {
-    
-    if(i % 5 == 0 & i % 3 == 0 ){
-        document.write(i + ' bix box <br>');
+// Programacion orientada objetos clases
+class DragonBollZ{
+    constructor(nombrePersonaje, ataquePersonaje, vidaPersonaje){
+        this.nombrePersonaje = nombrePersonaje;
+        this.ataquePersonaje = ataquePersonaje;
+        this.vidaPersonaje = vidaPersonaje
     }
 
-    else if(i % 5 == 0 ){
-        document.write(i + ' bizz <br>');
+    dimeTuNombre(){
+        alert(this.nombrePersonaje)
     }
+}
 
-    else if (i % 3 == 0){
-        document.write(i + ' box <br>');
-    }
-
-    else{
-        document.write(i +  '<br>');
-    }    
-} 
+var picoro = new DragonBollZ('Picoro', 52, 70);
+console.log(picoro);
+picoro.dimeTuNombre();
