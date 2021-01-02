@@ -1,33 +1,18 @@
-// Eventos de teclas
-var teclas = {
-    UP: 38,
-    DOWN: 40,
-    LEFT: 37,
-    RIGHT: 39
-}
-// keyup cuando suelto una tecla
- document.addEventListener('keyup', mensaje);
+for (let i = 0; i <= 100; i++) {
+    
+    if(i % 5 == 0 & i % 3 == 0 ){
+        document.write(i + ' bix box <br>');
+    }
 
- var suma = 100;
+    else if(i % 5 == 0 ){
+        document.write(i + ' bizz <br>');
+    }
 
- function mensaje(evento){
-     console.log(evento);
-     var desplazamiento = 50;    
+    else if (i % 3 == 0){
+        document.write(i + ' box <br>');
+    }
 
-     if(evento.keyCode == teclas.UP)
-     {
-         suma = suma + desplazamiento;
-         console.log('tecla hacia arriba '+ suma); 
-         
-     }
-
-     else if (evento.keyCode ==teclas.DOWN)
-     {
-        suma = suma - desplazamiento;
-         console.log('tecla hacia abajo' + suma); 
-     } 
- }
-
- 
-
- 
+    else{
+        document.write(i +  '<br>');
+    }    
+} 
